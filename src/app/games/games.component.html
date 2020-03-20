@@ -1,0 +1,20 @@
+<div class="container" style="margin-top: 70px;">
+  <h2>Game List</h2>
+
+  <table class="table table-hover">
+  <thead>
+      <tr>
+        <th>Game #</th>
+        <th>Home Team</th>
+        <th>Away Team</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let game of games">
+      <td>{{game.id}}</td>
+      <td>{{game.home_team.name}} - ({{game.home_team_score}})</td>
+      <td>{{game.away_team.name}} - ({{game.away_team_score}})</td>
+      </tr>
+  </tbody>
+  </table>
+</div>
